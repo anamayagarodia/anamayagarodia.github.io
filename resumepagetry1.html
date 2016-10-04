@@ -107,9 +107,9 @@ var SiteFilesMap = {"page-id1343569893637":"http://storage.googleapis.com/wzukus
 
 <div id="pdf"></div>
 
-<div class="pdfobject-com"><a href="http://pdfobject.com">PDFObject.com</a></div>
+<div class="anamayagarodia-me"><a href="http://anamayagarodia.me">PDFObject.com</a></div>
 
-<script src="/js/pdfobject.min.js"></script>
+<script src="/pdfobject.js"></script>
 <script>
 
 var options = {
@@ -122,7 +122,7 @@ var options = {
 	}
 };
 
-var myPDF = PDFObject.embed("/pdf/sample-3pp.pdf", "#pdf", options);
+var myPDF = PDFObject.embed("/resume.pdf", "#pdf", options);
 
 var el = document.querySelector("#results");
 el.setAttribute("class", (myPDF) ? "success" : "fail");
