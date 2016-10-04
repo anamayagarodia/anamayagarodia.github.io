@@ -103,13 +103,12 @@ var SiteFilesMap = {"page-id1343569893637":"http://storage.googleapis.com/wzukus
     </header>
     <section class="site-element" element-id="masterPageContentSectionId" element-type="SectionElement"></section>
     <section class="site-element" element-id="id1429000440867" element-type="SectionElement">
-      <div id="results" class="hidden"></div>
-
+      
 <div id="pdf"></div>
 
-<div class="anamayagarodia-me"><a href="http://anamayagarodia.me">PDFObject.com</a></div>
+<div class="pdfobject-com"><a href="http://anamayagarodia.me/resumepagetry1.html">PDFObject.com</a></div>
 
-<script src="/pdfobject.js"></script>
+<script src="http://pdfobject.com/js/pdfobject.min.js"></script>
 <script>
 
 var options = {
@@ -122,11 +121,8 @@ var options = {
 	}
 };
 
-var myPDF = PDFObject.embed("/resume.pdf", "#pdf", options);
+var myPDF = PDFObject.embed("/pdf/sample-3pp.pdf", "#pdf", options);
 
-var el = document.querySelector("#results");
-el.setAttribute("class", (myPDF) ? "success" : "fail");
-el.innerHTML = (myPDF) ? "PDFObject successfully added an &lt;embed> element to the page!" : "Uh-oh, the embed didn't work.";
 
 </script>
 
